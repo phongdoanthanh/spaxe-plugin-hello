@@ -26,7 +26,7 @@ jobs:
         with:
           repository: phongdoanthanh/spxdev
           path: spxdev
-          ref: f218880ecbaa3d019d65b5d84fca6bdf160eced6
+          ref: 3c0f77da8f67627ad691a25afa3df42479c28883
           sparse-checkout: apps/backend
 
       - name: Set up Go
