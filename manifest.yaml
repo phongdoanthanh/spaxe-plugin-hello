@@ -11,9 +11,10 @@ id: "spxdev-plugin-hello"
 api_version: 1
 version: "0.1.0"
 display_name: "Hello"
-description: "First official Spxdev plugin: a nav item + native route, a chat-toolbar action, backend event/webhook handling, and operator settings."
+description: "First official Spaxe Code plugin: a nav item + native route, a chat-toolbar action, backend event/webhook handling, and operator settings."
 author: "phongdoanthanh"
 categories: ["tools"]
+repo_url: "https://github.com/phongdoanthanh/spaxe-plugin-hello"
 
 # min_spxdev_version is the oldest spxdev release this plugin will install
 # against. A release host compares it to its own version at install time and

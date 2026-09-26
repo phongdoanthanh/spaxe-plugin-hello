@@ -1,15 +1,15 @@
-# spxdev-plugin-hello
+# spaxe-plugin-hello
 
-A starter template for building a [spxdev](https://github.com/phongdoanthanh/spxdev)
+A starter template for building a [Spaxe Code](https://github.com/phongdoanthanh/spaxe-code)
 **native-UI plugin** — its own git repo, packaged into a versioned tarball and
-installed against a running spxdev instance. Click **“Use this template”** on
+installed against a running Spaxe Code instance. Click **“Use this template”** on
 GitHub (or copy this repo) to bootstrap your own plugin.
 
 It is a small, complete example of the core plugin surfaces, wired together so
 you can delete what you do not need rather than assemble it from scratch:
 
 - **Native nav item + route** — `ui/bundle.js` adds a sidebar entry that opens
-  `/template`, a page rendered natively inside the spxdev SPA (not an iframe)
+  `/template`, a page rendered natively inside the Spaxe Code SPA (not an iframe)
   using the host's own React instance.
 - **A page built from host components** — one `Card` containing a `Popover`
   (host-positioned, no `getBoundingClientRect` math), a `Progress` bar, a
@@ -210,7 +210,7 @@ real version instead.
 The frontend recipe follows the same temporary source-checkout model through
 `@spxdev/plugin-sdk` in `package.json`. It is a runtime-free type dependency:
 the recipe uses `import type`, and the default `ui/bundle.js` remains a
-dependency-free ES module. CI pins both SDK contracts to the same Spxdev source
+dependency-free ES module. CI pins both SDK contracts to the same Spaxe Code source
 revision.
 
 ## Layout

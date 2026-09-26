@@ -67,7 +67,7 @@ package:
 	GOOS=darwin  GOARCH=amd64 go build -o $(STAGE)/server/plugin-darwin-amd64      ./server
 	GOOS=darwin  GOARCH=arm64 go build -o $(STAGE)/server/plugin-darwin-arm64      ./server
 	GOOS=windows GOARCH=amd64 go build -o $(STAGE)/server/plugin-windows-amd64.exe ./server
-	cd $(SPXDEV_SDK) && go run ./cmd/plugin-pack -dir $(CURDIR)/$(STAGE) -out $(CURDIR)/$(PKG_OUT)
+	cd "$(SPXDEV_SDK)" && go run ./cmd/plugin-pack -dir "$(CURDIR)/$(STAGE)" -out "$(CURDIR)/$(PKG_OUT)"
 	rm -rf $(STAGE)
 	@echo "Wrote $(PKG_OUT)"
 
@@ -79,7 +79,7 @@ package-host:
 	cp manifest.yaml $(STAGE)/manifest.yaml
 	cp -r ui $(STAGE)/ui
 	go build -o $(STAGE)/server/plugin-$$(go env GOOS)-$$(go env GOARCH)$$(go env GOEXE) ./server
-	cd $(SPXDEV_SDK) && go run ./cmd/plugin-pack -dir $(CURDIR)/$(STAGE) -out $(CURDIR)/$(PKG_OUT) -platform-only
+	cd "$(SPXDEV_SDK)" && go run ./cmd/plugin-pack -dir "$(CURDIR)/$(STAGE)" -out "$(CURDIR)/$(PKG_OUT)" -platform-only
 	rm -rf $(STAGE)
 	@echo "Wrote $(PKG_OUT)"
 
