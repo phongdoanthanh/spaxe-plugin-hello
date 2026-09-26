@@ -27,6 +27,7 @@ jobs:
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
         with:
           repository: phongdoanthanh/spxdev
+          token: ${{ secrets.CORE_REPO_TOKEN }}
           path: spxdev
           ref: 3c0f77da8f67627ad691a25afa3df42479c28883
           sparse-checkout: |
@@ -84,6 +85,7 @@ jobs:
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
         with:
           repository: phongdoanthanh/spxdev
+          token: ${{ secrets.CORE_REPO_TOKEN }}
           path: spxdev
           ref: 3c0f77da8f67627ad691a25afa3df42479c28883
           sparse-checkout: apps/backend
